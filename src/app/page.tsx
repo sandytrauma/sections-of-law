@@ -10,7 +10,7 @@ const page = () => {
     <section className=' w-full h-full'>
       <div className="container md:flex md:flex-col-2 lg:flex-col-2 p-4 h-screen mt-10 items-center justify-center mx-auto">
       <Image
-        src="/snowboarder.png"
+        src="./snowboarder.png"
         alt="homepage_image"
         width={100}
         height={100}
