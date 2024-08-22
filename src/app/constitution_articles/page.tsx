@@ -19,7 +19,7 @@ const ConstitutionArticlesPage = async () => {
 
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Constitution Articles</h1>
+      <h1 className="text-center mt-5 text-gray-300 text-2xl md:text-3xl font-mono font-extrabold">Articles of Constitution</h1>
       <ConstitutionContent data={data} />
     </div>
   );

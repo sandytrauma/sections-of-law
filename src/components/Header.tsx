@@ -3,11 +3,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { constitutionLink, homeLink, navLinks, sectionSublinks } from '@/constants/navLinks';
+import { constitutionLink, forumLink, homeLink, navLinks, sectionSublinks } from '@/constants/navLinks';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Toggle mobile menu visibility
   const handleMenuClick = () => {
@@ -64,7 +64,16 @@ const Header = () => {
               {homeLink.name}
             </Link>
           </li>
-
+          <li>
+            <Link href={constitutionLink.path} className="text-yellow-200 hover:text-teal-300">
+              {constitutionLink.name}
+            </Link>
+          </li>
+          <li>
+            <Link href={forumLink.path} className="text-yellow-200 hover:text-teal-300">
+              {forumLink.name}
+            </Link>
+          </li>
           {/* Dropdown Trigger */}
           <li className="relative ">
             <button
@@ -96,13 +105,7 @@ const Header = () => {
             )}
           </li>
         </ul>
-        <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 bg-teal-500 md:bg-gray-800 p-4 mt-2 md:p-0 rounded md:rounded-none">
-          <li>
-            <Link href={constitutionLink.path} className="text-yellow-200 hover:text-teal-300">
-              {constitutionLink.name}
-            </Link>
-          </li>
-          </ul>
+
       </div>
     </nav>
   );

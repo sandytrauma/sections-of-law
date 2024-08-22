@@ -16,6 +16,7 @@ export interface ActSection {
   section_desc?: string;
   section?: string; 
   article?: number | string;
+  content?: string;
 }
 
 export type ActSections = ActSection[]; 
