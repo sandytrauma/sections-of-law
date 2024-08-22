@@ -194,7 +194,7 @@ const ActSectionContent: React.FC<ActSectionContentProps> = ({ data }) => {
                   className="absolute top-4 right-4  text-teal-600 px-4 py-2 rounded"
                 >
                   <Image
-                  src="/copy.png"
+                  src="./copy.png"
                   width={18}
                   height={18}
                   alt='copy-img'
